@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <!-- <link rel="shortcut icon" href="images/logo.png" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon//favicon-16x16.png">
+    <link rel="manifest" href="../favicon//site.webmanifest">
+    <link rel="mask-icon" href="../favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+          <h1>Signup</h1>
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="form-group">
+            <button onclick="signup()" type="submit" value="Signup">Sign Up</button>
+          </div>
+          <div class="form-group">
+            <p class="login-link">Already have an account? <a href="../login/login.html" >Login here</a></p>
+          </div>
+        </form>
+      </div>
+      <script type="module" src="signUp.js"></script>
+      
+</body>
+</html>

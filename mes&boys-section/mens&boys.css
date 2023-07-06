@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nova+Cut&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+:root {
+  --lg-font: "open Sans", serif;
+  --sm-font: "Nova cut", serif;
+  --st-font: "Playfair Display", serif;
+  --pink: #e5345b;
+}
+.b-c-g {
+  background-color: var(--pink);
+}
+/* ################## navbar################# */
+.btn-2{
+  background-color: #fff;
+  padding-top: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-bottom: 1px solid var(--pink);
+}
+.nav-item a:hover {
+  color: var(--pink);
+}
+.nav-item a {
+  font-family: var(--lg-font);
+}
+.navbar {
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.nav-item {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+.navbar-expand-lg{
+  height: 100px !important;
+}
+/* ################## header ################# */
+
+#header {
+  background: url(images/E-CommerceProduts/U.H\ collection.png  ) top/cover no-repeat ;
+  /* background-repeat: no-repeat ;*/
+   background-size: cover; 
+}
+.btn:not(.btn-1 button) {
+  background-color: #fff;
+  padding-top: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+}
+.btn:not(.btn-1 button):hover {
+  background-color: var(--pink);
+  color: #fff;
+  border-color: var(--pink);
+}
+.carousel-inner h1 {
+  font-size: 60px !important;
+  font-family: var(--st-font) !important;
+}
+
+/* ################## Collection ################# */
+.title h2::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--pink);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.active-filter-btn {
+  background-color: var(--pink) !important;
+  color: #fff !important;
+  border: var(--pink) !important;
+}
+.collection-img span {
+  position: absolute !important;
+  background-color: var(--pink);
+  right: 20px;
+  border-radius: 50%;
+  padding: 6px;
+}
+/* ################## Collection ################# */
+.special-img span {
+  top: 13px;
+  right: 13px;
+}
+.special-img img{
+  transition: all 0.3s ease ;
+}
+.special-img img:hover{
+  transform: scale(1.2);
+}
+/* ################## Offers ################# */
+#offers{
+  background: url(images/E-CommerceProduts/offer\ banner.jpg) center/cover no-repeat;
+}
+#offers .row{
+  min-height: 60vh;
+}
+.offer-content span{
+font-size: 28px;
+}
+.offer-content h2{
+  font-size: 68px;
+  font-family: var(--st-font);
+}
+/* ################## blogs ################# */
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################ media #################### */
+@media (min-width: 992px) {
+  .nav-item {
+    border-bottom: none;
+  }
+ 
+}
+@media (max-width: 992px){
+  #header{
+    background: url(images/E-CommerceProduts/u.h.png) top/cover no-repeat ;
+  }
+  #for-mob{
+   /* margin-bottom: 40px ; */
+   margin-top: -30px;
+  }
+  #collection-buttons{
+    display: none !important;
+  }
+}
